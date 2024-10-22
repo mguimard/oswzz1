@@ -1,6 +1,9 @@
-import Chocolatine from "./chocolatine.js";
-import { TodoItem, TodoList } from "./todo-list.js";
+import { defineComponents } from "./lib/my-framework.js";
 
-customElements.define('my-chocolatine', Chocolatine)
-customElements.define('todo-list', TodoList)
-customElements.define('todo-item', TodoItem)
+import Chocolatine from "./components/chocolatine.js";
+import TodoList from "./components/todo-list.js";
+import TodoItem from "./components/todo-item.js";
+
+defineComponents([
+    Chocolatine, TodoItem, TodoList
+])

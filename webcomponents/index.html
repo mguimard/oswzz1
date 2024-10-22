@@ -7,13 +7,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js' type="module"></script>
+
 </head>
 <body>
-
-    <template id="todo-list-template">
-        <input type="checkbox" />
-        <slot name="my-text">default text</slot>
-    </template>
 
     <h1> Hello </h1>
     <p>this is a p</p>
@@ -26,6 +22,7 @@
     <todo-item>
         <span slot="my-text">Hello slot</span>
     </todo-item>
+
 
 </body>
 </html>
