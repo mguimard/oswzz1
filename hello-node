@@ -1,0 +1,19 @@
+import fs from 'fs/promises'
+import process from 'process'
+
+console.log(process)
+
+if(process.argv[2] == 'toto'){
+
+   /* fs.readFile('README.md', 'utf-8', function(err, data){
+        if(err) throw err
+        console.log(data)
+    })*/
+
+  (async () => {
+    let data = await fs.readFile('README.md', 'utf-8')
+    console.log(data)
+  })()
+}
+
+

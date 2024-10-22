@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js' type="module"></script>
+</head>
+<body>
+
+    <template id="todo-list-template">
+        <input type="checkbox" />
+        <slot name="my-text">default text</slot>
+    </template>
+
+    <h1> Hello </h1>
+    <p>this is a p</p>
+    <todo-list></todo-list>
+    <br />
+    <my-chocolatine></my-chocolatine>
+    <my-chocolatine></my-chocolatine>
+
+
+    <todo-item>
+        <span slot="my-text">Hello slot</span>
+    </todo-item>
+
+</body>
+</html>
