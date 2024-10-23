@@ -1,0 +1,8 @@
+<p>{{ count() }} / {{ todos.length }}</p>
+<p>{{ todos | countCompleted }} / {{ todos.length }}</p>
+
+@for( todo of todos | sortCompleted ; track todo.id){
+<app-todo-item [todo]="todo"></app-todo-item>
+} @empty {
+<p>please wait....</p>
+}
