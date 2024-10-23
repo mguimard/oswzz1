@@ -28,7 +28,6 @@ export class Component extends HTMLElement {
         super()
         console.log('new Component instance' , this.constructor.name)
         setupFn[this.constructor.name].bind(this)()
-        document.getElementById(this.constructor.selector + '-template')
     }
 
 }
