@@ -1,0 +1,15 @@
+<p [ngClass]="{'show' : prix > 10}"> {{ choco | auFour | json }}</p>
+<p>{{ (obs$ | async) | json }}</p>
+<p>{{ (choco | auFour).cuisson }}</p>
+<p>{{ prix }}</p>
+<button (click)="prix = 0"> reset </button>
+<button (click)="doSomething()" (mouseenter)="prix = prix + 1">click me</button>
+{{ data }}
+
+{{ count() }}
+
+@for(user of data; track user.id){
+   <p> {{ user.name }}</p>
+} @empty {
+    <p>pas encore de données, patienter...</p>
+}

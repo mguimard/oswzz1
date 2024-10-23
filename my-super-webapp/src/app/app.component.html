@@ -1,0 +1,16 @@
+<h1>Hello angular</h1>
+<p>tuyau : {{ (obs$ |async)|json }}</p>
+
+
+<input type="checkbox" [(ngModel)]="show" /> Click me
+{{ show }}
+
+<button [disabled]="show">Disabled Button</button>
+
+
+
+
+@if(show){
+    <app-chocolatine qualite="ok" (aEteMange)="showEvent($event)"></app-chocolatine>
+    <app-chocolatine [qualite]="title"></app-chocolatine>
+}
