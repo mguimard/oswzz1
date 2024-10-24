@@ -4,7 +4,7 @@
 
 npx tsx main.ts
 
-ou 
+ou
 
 npm install -g tsx
 tsx main.ts
@@ -13,4 +13,3 @@ tsx main.ts
 
 npm install -g typescript
 tsc --sourceMap index.ts
-
